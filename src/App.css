@@ -46,3 +46,13 @@ section {
   justify-items:center;
   padding: 20px;
 }
+
+.acordion {
+  width: 100vw;
+  height: auto;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
