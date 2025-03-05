@@ -12,8 +12,15 @@ interface CustomCardProps {
   height?: string;
 }
 
-
-function CustomCard({ img, title, text, className, button = true, width, height }: CustomCardProps) {
+function CustomCard({
+  img,
+  title,
+  text,
+  className,
+  button = true,
+  width,
+  height,
+}: CustomCardProps) {
   return (
     <Card
       style={{ width: `${width}`, height: `${height}` }}
@@ -21,18 +28,22 @@ function CustomCard({ img, title, text, className, button = true, width, height 
     >
       <Card.Img variant="top" src={img} className="image" />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{text}</Card.Text> 
+        <Card.Title>
+          {" "}
+          <div className="animate__bounceInLeft">{title}</div>
+        </Card.Title>
+        <Card.Text>{text}</Card.Text>
       </Card.Body>
-      {
-        button ? <Button
-        variant="outline-primary"
-        style={{ width: "70%", margin: "10px" }}
-      >
-        Leer Más
-      </Button> : <></>
-      }
-      
+      {button ? (
+        <Button
+          variant="outline-primary"
+          style={{ width: "70%", margin: "10px" }}
+        >
+          Leer Más
+        </Button>
+      ) : (
+        <></>
+      )}
     </Card>
   );
 }

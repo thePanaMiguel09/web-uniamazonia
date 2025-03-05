@@ -1,4 +1,4 @@
-import { Row, Col, Card, Container, Button } from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 
 import { news } from "../../infrastructure/news";
 import CustomCard from "../card/CustomCard";
