@@ -8,6 +8,7 @@ import "./App.css";
 
 import { cardInformation } from "./infrastructure/headerCardImages";
 import VideoPlayer from "./components/video/VideoPlayer";
+import FooterComponent from "./components/footer/FooterComponent";
 
 function App() {
   return (
@@ -29,9 +30,12 @@ function App() {
         <Acordion />
         <VideoPlayer
           url="https://www.youtube.com/watch?v=BH8azKgncwk&list=PLOvyGQVi5ZCke6lNjz40tySyvtBWIRFs2&t=4s"
-          title="Liquidaciones"
+          title="Canal de YouTube: Liquidaciones"
         />
       </main>
+      <footer>
+        <FooterComponent />
+      </footer>
     </>
   );
 }

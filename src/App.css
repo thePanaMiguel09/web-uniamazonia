@@ -57,3 +57,10 @@ section {
  
   
 }
+
+
+footer {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
