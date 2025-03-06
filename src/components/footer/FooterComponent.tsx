@@ -22,9 +22,13 @@ function FooterComponent() {
               variant="success"
             >
               {item.links.map((itemLink, indexLink) => (
-                <><Dropdown.Item as="a" href={itemLink.url} key={indexLink}>
-                  {itemLink.title}
-                </Dropdown.Item><Dropdown.Divider /></>
+                <>
+                  <Dropdown.Item as="a" href={itemLink.url} key={indexLink}>
+                    {itemLink.title}
+                  </Dropdown.Item>
+
+                  <Dropdown.Divider />
+                </>
               ))}
             </DropdownButton>
           </Col>

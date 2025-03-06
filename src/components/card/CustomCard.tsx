@@ -24,7 +24,7 @@ function CustomCard({
   return (
     <Card
       style={{ width: `${width}`, height: `${height}` }}
-      className={`card ${className}`}
+      className={`card ${className} `}
     >
       <Card.Img variant="top" src={img} className="image" />
       <Card.Body>

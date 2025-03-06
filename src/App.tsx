@@ -9,6 +9,7 @@ import "./App.css";
 import { cardInformation } from "./infrastructure/headerCardImages";
 import VideoPlayer from "./components/video/VideoPlayer";
 import FooterComponent from "./components/footer/FooterComponent";
+import Icons from "./components/icons/Icons";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       </main>
       <footer>
         <FooterComponent />
+        <Icons />
       </footer>
     </>
   );
